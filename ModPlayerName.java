@@ -1,7 +1,7 @@
-package shaderclient.mods.impl;
+package clientname.mods.impl;
 
-import shaderclient.gui.hud.ScreenPosition;
-import shaderclient.mods.ModDraggable;
+import clientname.gui.hud.ScreenPosition;
+import clientname.mods.ModDraggable;
 
 public class ModPlayerName extends ModDraggable{
 
@@ -18,7 +18,7 @@ public class ModPlayerName extends ModDraggable{
 
 	@Override
 	public void render(ScreenPosition pos) {
-		font.drawString("ง5" + mc.thePlayer.getName(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+		font.drawString("ยง5" + mc.thePlayer.getName(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
 	}
 
 
