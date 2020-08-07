@@ -3,9 +3,8 @@ package shaderclient.mods.impl;
 import shaderclient.gui.hud.ScreenPosition;
 import shaderclient.mods.ModDraggable;
 
-public class ModPlayerName extends ModDraggable{
+public class TEST extends ModDraggable{
 
-	
 	@Override
 	public int getWidth() {
 		return 50;
@@ -18,13 +17,12 @@ public class ModPlayerName extends ModDraggable{
 
 	@Override
 	public void render(ScreenPosition pos) {
-		font.drawString("§5" + mc.thePlayer.getName(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+		font.drawString("§6Test" , pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
 	}
 	
 	@Override
 	public void renderDummy(ScreenPosition pos) {
-		font.drawString("§5" + mc.thePlayer.getName(), pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
+		font.drawString("§6Test"  , pos.getAbsoluteX(), pos.getAbsoluteY(), -1);
 	}
-
 
 }
